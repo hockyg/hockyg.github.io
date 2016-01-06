@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <title>Exploring Valleys without Climbing Every Peak: More Efficient and Forgiving Metabasin Metadynamics via Robust On-the-Fly Bias Domain Restriction - Glen Hocky</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="http://princeton.edu/~tcb2/publications/exploring-valleys-without-climbing-every-peak-more-efficient-and-forgiving-metabasin-metadynamics-via-robust-on-the-fly-bias-domain-restriction.html">
+
+        <meta name="author" content="James F. Dama, <b>Glen M. Hocky</b>, Rui Sun, and Gregory A. Voth" />
+        <meta name="description" content="Metadynamics is an enhanced sampling method designed to flatten free energy surfaces uniformly. However, the highest-energy regions are often irrelevant to study and dangerous to explore because systems often change irreversibly in unforeseen ways in response to driving forces in these regions, spoiling the sampling. Introducing an on-the-fly domain restriction ..." />
+
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://princeton.edu/~tcb2/theme/css/bootstrap.cosmo.min.css" type="text/css"/>
+    <link href="http://princeton.edu/~tcb2/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="http://princeton.edu/~tcb2/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://princeton.edu/~tcb2/theme/css/style.css" type="text/css"/>
+        <link href="http://princeton.edu/~tcb2/static/custom.css" rel="stylesheet">
+
+
+    <!-- Google analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-55745147-1', 'auto');
+    ga('send', 'pageview');
+    
+    </script> 
+
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://princeton.edu/~tcb2/" class="navbar-brand">
+Glen Hocky            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                         <li><a href="http://princeton.edu/~tcb2/">
+                             About
+                          </a></li>
+<li><a href="http://princeton.edu/~tcb2/publications/index.html"><i class="fa fa-th-list"></i><span class="icon-label">Publications</span></a></li>            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="hidden-xs hidden-sm"><a href="http://jfi.uchicago.edu/" target="_blank">James Franck Institute</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="http://princeton.edu/~tcb2/publications/exploring-valleys-without-climbing-every-peak-more-efficient-and-forgiving-metabasin-metadynamics-via-robust-on-the-fly-bias-domain-restriction.html"
+                       rel="bookmark"
+                       title="Permalink to Exploring Valleys without Climbing Every Peak: More Efficient and Forgiving Metabasin Metadynamics via Robust On-the-Fly Bias Domain Restriction">
+                        Exploring Valleys without Climbing Every Peak: More Efficient and Forgiving Metabasin Metadynamics via Robust On-the-Fly Bias Domain Restriction
+                    </a>
+                </h1>
+    <h4>James F. Dama, <b>Glen M. Hocky</b>, Rui Sun, and Gregory A. Voth</h4>
+    <h4>J. Chem. Theor. Comput. 11 (12) 5638-5650 (2015)</h4>
+
+    <br>
+        <p><i class="fa fa-calendar"></i> Published <time datetime="2015-11-03T00:00:00-05:00"> Nov 03 2015</time></p>
+        <p><i class="fa fa-file-text-o"></i> <a href="http://dx.doi.org/10.1021/acs.jctc.5b00907" target="_blank">Link to journal</a></p>
+        <p><i class="fa fa-file-text-o"></i> <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=tJMhlWMAAAAJ&sortby=pubdate&citation_for_view=tJMhlWMAAAAJ:OTTXONDVkokC" target="_blank">Citations on Google Scholar</a></p>
+
+
+
+                </header>
+            <div class="entry-content">
+                <p>Metadynamics is an enhanced sampling method designed to flatten free energy surfaces uniformly. However, the highest-energy regions are often irrelevant to study and dangerous to explore because systems often change irreversibly in unforeseen ways in response to driving forces in these regions, spoiling the sampling. Introducing an on-the-fly domain restriction allows metadynamics to flatten only up to a specified energy level and no further, improving efficiency and safety while decreasing the pressure on practitioners to design collective variables that are robust to otherwise irrelevant high energy driving. This paper describes a new method that achieves this using sequential on-the-fly estimation of energy wells and redefinition of the metadynamics hill shape, termed metabasin metadynamics. The energy level may be defined a priori or relative to unknown barrier energies estimated on-the-fly. Altering only the hill ensures that the method is compatible with many other advances in metadynamics methodology. The hill shape has a natural interpretation in terms of multiscale dynamics, and the computational overhead in simulation is minimal when studying systems of any reasonable size, for instance proteins or other macromolecules. Three example applications show that the formula is accurate and robust to complex dynamics, making metadynamics significantly more forgiving with respect to CV quality and thus more feasible to apply to the most challenging biomolecular systems.</p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+    <ul class="list-inline">
+        <li class="pull-right">
+            <a href="http://princeton.edu/~tcb2/publications/equilibrium-ultrastable-glasses-produced-by-random-pinning.html">
+                Older
+            </a> <i class="fa fa-arrow-right"></i>
+        </li>
+    </ul>
+
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+      <div class="row">
+         <div class="col-lg-4 col-xs-12">
+            <p>&copy; 2015 Glen Hocky &middot; <a href='mailto&#58;%&#54;&#56;%6&#70;c&#37;6B%7&#57;%&#54;7&#64;u%6&#51;hica%67o%2Eedu'>h&#111;c&#107;&#121;g&#64;uchi&#99;&#97;go&#46;edu</a> </p>
+            <!-- Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a> -->         </div>
+         <div class="col-lg-6 col-xs-12">
+            <ul class="list-inline">
+              <li><a href="https://scholar.google.com/citations?user=tJMhlWMAAAAJ&hl=en&oi=ao"  target="_blank">Google Scholar</a></li>
+              <li><a href="http://github.com/hockyg"  target="_blank">Github</a></li>
+              <li><a href="http://arxiv.org/find/cond-mat/1/au:+Hocky_G/0/1/0/all/0/1"  target="_blank">arXiv</a></li>
+              <li><a href="https://vothgroup.uchicago.edu/group/voth-group-member/glen-hocky"  target="_blank">Voth Group</a></li>
+            </ul>
+         </div>
+         <div class="col-lg-2 col-xs-12">
+            <p class="pull-right-sm pull-left-xs"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p>
+         </div>
+      </div>
+      </div>
+   </div>
+</footer>
+<script src="http://princeton.edu/~tcb2/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- <script src="http://princeton.edu/~tcb2/theme/js/bootstrap.min.js"></script> -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="http://princeton.edu/~tcb2/theme/js/respond.min.js"></script>
+
+
+</body>
+</html>
