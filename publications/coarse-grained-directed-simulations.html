@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-    <title>Mechanosensitive inhibition of formin facilitates contractile ring assembly in fission yeast - Glen Hocky</title>
+    <title>Coarse-grained directed simulations - Glen Hocky</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -9,10 +9,10 @@
 
 
 
-<link rel="canonical" href="../publications/mechanosensitive-inhibition-of-formin-facilitates-contractile-ring-assembly-in-fission-yeast.html">
+<link rel="canonical" href="../publications/coarse-grained-directed-simulations.html">
 
-        <meta name="author" content="Dennis Zimmermann, Kaitlin E. Homa*, <b>Glen M. Hocky*</b>, Luther W. Pollard, Enrique M. De La Cruz, Gregory A. Voth, Matthew J. Lord, Kathleen M. Trybus, and David R. Kovar" />
-        <meta name="description" content="Cytokinesis physically separates dividing cells by forming a contractile actomyosin ring. The fission yeast contractile ring has been proposed to assemble by Search-Capture-Pull-Release from cytokinesis precursor nodes that include the molecular motor type-II myosin Myo2 and the actin assembly factor formin Cdc12. By successfully reconstituting Search-Capture-Pull in vitro, we discovered ..." />
+        <meta name="author" content="<b>Glen M. Hocky</b>, Thomas Dannenhoffer-Lafage, and Gregory A. Voth" />
+        <meta name="description" content="In the field of molecular simulation, there are many situations where we might like to do extensive and expensive sampling procedures on a subsystem within a larger macromolecular context, e.g., on one or a few proteins from within a many-protein assembly (such as an actin filament or a virus ..." />
 
 
 
@@ -75,14 +75,14 @@ Glen Hocky            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="../publications/mechanosensitive-inhibition-of-formin-facilitates-contractile-ring-assembly-in-fission-yeast.html"
+                    <a href="../publications/coarse-grained-directed-simulations.html"
                        rel="bookmark"
-                       title="Permalink to Mechanosensitive inhibition of formin facilitates contractile ring assembly in fission yeast">
-                        Mechanosensitive inhibition of formin facilitates contractile ring assembly in fission yeast
+                       title="Permalink to Coarse-grained directed simulations">
+                        Coarse-grained directed simulations
                     </a>
                 </h1>
-    <h4>Dennis Zimmermann, Kaitlin E. Homa*, <b>Glen M. Hocky*</b>, Luther W. Pollard, Enrique M. De La Cruz, Gregory A. Voth, Matthew J. Lord, Kathleen M. Trybus, and David R. Kovar</h4>
-    <h4>Nature Comm., in press (2017)</h4>
+    <h4><b>Glen M. Hocky</b>, Thomas Dannenhoffer-Lafage, and Gregory A. Voth</h4>
+    <h4>Submitted (2017)</h4>
 
     <br>
 
@@ -90,19 +90,14 @@ Glen Hocky            </a>
 
                 </header>
             <div class="entry-content">
-                <p>Cytokinesis physically separates dividing cells by forming a contractile actomyosin ring. The fission yeast contractile ring has been proposed to assemble by Search-Capture-Pull-Release from cytokinesis precursor nodes that include the molecular motor type-II myosin Myo2 and the actin assembly factor formin Cdc12. By successfully reconstituting Search-Capture-Pull in vitro, we discovered that formin Cdc12 is a mechanosensor, whereby myosin pulling on formin-bound actin filaments inhibits Cdc12-mediated actin assembly. We mapped Cdc12 mechanoregulation to its formin-homology (FH) 1 domain, which facilitates delivery of new actin subunits to the elongating actin filament. Quantitative modelling suggests that the pulling force of the myosin propagates through the actin filament, which behaves as an entropic spring, and thereby may stretch the disordered FH1 domain and impede formin-mediated actin filament elongation. Finally, live cell imaging of mechano-insensitive formin mutant cells established that mechanoregulation of formin Cdc12 is required for efficient contractile ring assembly in vivo.</p>
+                <p>In the field of molecular simulation, there are many situations where we might like to do extensive and expensive sampling procedures on a subsystem within a larger macromolecular context, e.g., on one or a few proteins from within a many-protein assembly (such as an actin filament or a virus capsid), or on a region of a polymer within a mesoscopic assembly of such polymers. In such cases, we might want to study, e.g., the free-energetics of a small molecule binding to a protein that is contained in a large complex or embedded within a membrane, or the conformational motions of one of the proteins within the larger many-protein assembly. This kind of situation is typically modeled by putting the subsystem into solution and either fixing some of its conformations or by constraining it via harmonic potentials. A drawback of either approach is that they lose the system’s native fluctuations due to changing the environment and the imposition of the extra potential, and these fluctuations may be crucial to achieving correct simulation estimates for a model within the larger assembly. Moreover, such constraints do not minimize the relative entropy of the constrained subsystem to the unconstrained one in the larger assembly. In this study, we provide a new approach to this problem by drawing on ideas developed to incorporate experimental information into a molecular simulation. We show that by using linear biases on coarse-grained observables (such as distances or angles between large subdomains within a protein), we can maintain the protein in a particular target conformation while also preserving the correct equilibrium fluctuations of the subsystem within its larger biomolecular complex. As an application, we demonstrate this algorithm by training a bias that causes an actin monomer (and trimer) in solution to sample the same average structure and fluctuations as if it were embedded within a much larger actin filament. Additionally, we have developed a number of algorithmic improvements that accelerate convergence of the on-the-fly relative entropy minimization algorithms for this type of application. Finally, we have contributed these methods to the PLUMED open source free energy sampling software library.</p>
             </div>
             <!-- /.entry-content -->
         </article>
     </section>
     <ul class="list-inline">
-        <li class="pull-left">
-            <i class="fa fa-arrow-left"></i> <a href="../publications/coarse-grained-directed-simulation.html">
-                Newer
-            </a>
-        </li>
         <li class="pull-right">
-            <a href="../publications/actin-filament-strain-promotes-severing-and-cofilin-dissociation.html">
+            <a href="../publications/mechanosensitive-inhibition-of-formin-facilitates-contractile-ring-assembly-in-fission-yeast.html">
                 Older
             </a> <i class="fa fa-arrow-right"></i>
         </li>

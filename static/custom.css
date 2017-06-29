@@ -3,3 +3,7 @@
     vertical-align: middle;
     float: none;
 }
+
+.entry-content {
+    text-align: justify;
+}
